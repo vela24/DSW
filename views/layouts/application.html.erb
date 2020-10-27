@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webapp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/619360b125.js"></script>
+ 
+  </head>
+
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="collapse navbar-collapse"> 
+      <div class="top-nav" id="brand">
+        <%= image_tag("logo.png") %>
+      </div>
+      <div class="top-nav" id="search_bar">
+       <%= image_tag("search.gif") %></a><input style="background-image: 'search.gif';" type="text" placeholder="search">
+      </div>
+        <ul class="navbar-nav ml-auto">
+         
+          <li class="nav-item option"><a class="nav-link"><%= image_tag("account.gif") %></a></li>
+          <li class="nav-item option"><a class="nav-link"><%= image_tag("store.gif") %></a></li>
+          <li class="nav-item option"><a class="nav-link"><%= image_tag("bag.gif") %></a></li>
+         </ul>
+      </div>
+  </nav>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="collapse navbar-collapse"> 
+        <ul class="navbar-nav m-auto">
+           <li class="nav-item">
+               <a class="nav-link">Comfort Zone</a>
+           </li>
+            <li class="nav-item"><a class="nav-link">Women</a></li>
+            <li class="nav-item"><a class="nav-link">Men</a></li>
+            <li class="nav-item"><a class="nav-link">Kids</a></li>
+            <li class="nav-item"><a class="nav-link">Accessories</a></li>
+            <li class="nav-item"><a class="nav-link">Clearance</a></li>
+            <li class="nav-item"><a class="nav-link">Brands</a></li>
+            <li class="nav-item"><a class="nav-link">JLO</a></li>
+        </ul>
+      </div>
+  
+  </nav>
+   
+  <%= yield %>
+
+
+
+  
+</html>
